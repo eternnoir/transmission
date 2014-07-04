@@ -7,3 +7,7 @@ MAINTAINER Frank Wang "eternnoir@gmail.com"
 
 #Update
 RUN apt-get update && apt-get install -y software-properties-common
+# Install Transmission
+RUN add-apt-repository -y ppa:transmissionbt/ppa && \
+    apt-get update && \
+	    apt-get install -y transmission-daemon
