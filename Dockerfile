@@ -25,4 +25,4 @@ EXPOSE 64321
 
 VOLUME ["/var/lib/transmission-daemon/downloads"]
 
-
+CMD ["sh","run.sh"]
